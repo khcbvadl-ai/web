@@ -1,0 +1,17 @@
+//"Tôi đang dùng hệ thống web quản lý Khoa KHCB theo kiến trúc Micro-Engine tập trung:
+
+//Hai file lõi dùng chung trên CDN/GitHub: khcb-app.css và khcb-app.js.
+
+//Các web con chỉ có file HTML nhẹ gọi KHCB.init(config).
+
+//Hệ thống có các module chính: home (Portal cây 3 cấp), table (Bảng đa năng có filterColIndex, linkColIndex, useConfigTab), schedule (Lịch giảng + xuất Word), plan (Kế hoạch đào tạo + badge trạng thái), report (Báo cáo công việc lọc ngày + xuất Word), video (Player 16:9 + Accordion mục lục).
+
+//Phím F2 mở modal nhập mật khẩu, tự động đối soát với ô A1 trong tab Pass của Google Sheet để mở link Sheet.
+
+//[Sau đó bạn chỉ cần nêu yêu cầu mới: ví dụ muốn sửa hàm lọc, thêm module mới, hay sửa giao diện mobile...]"
+//Lợi ích khi bạn gửi đoạn tóm tắt này:
+//Tôi định vị ngay vị trí cần sửa: Biết chính xác logic đó nằm ở hàm nào trong khcb-app.js (ví dụ: apply() cho bảng đa năng, applyS() cho lịch giảng, verifyAdminPass() cho modal F2).
+
+//Không làm vỡ cấu trúc dùng chung: Code sinh ra sẽ luôn tương thích với mô hình KHCB.init(config) và giữ nguyên vẹn 2 file CDN chung mà không bắt bạn phải sửa lại từng file HTML con.
+
+//Tiết kiệm thời gian: Bạn chỉ mất 5 giây sao chép đoạn mô tả ngắn trên là cuộc trò chuyện mới sẽ tiếp tục mạch làm việc chính xác 100%.
